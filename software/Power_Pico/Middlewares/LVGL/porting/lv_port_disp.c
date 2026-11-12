@@ -84,12 +84,17 @@ void lv_port_disp_init(void)
     /* Example 2
      * Two buffers for partial rendering
      * In flush_cb DMA or similar hardware should be used to update the display in the background.*/
+#if MY_DISP_HOR_RES * MY_DISP_VER_RES / 2 * BYTE_PER_PIXEL > 65535
+#error LVGL draw buffer exceeds the SPI DMA transfer limit
+#endif
     LV_ATTRIBUTE_MEM_ALIGN
-    /* Two 40-row buffers use 38400 bytes total (19200 fewer than the old single buffer). */
-    static uint8_t buf_2_1[MY_DISP_HOR_RES * MY_DISP_VER_RES / 6 * BYTE_PER_PIXEL];
+    /* Two 120-row buffers stay below the SPI DMA 16-bit transfer limit. */
+    static uint8_t buf_2_1[MY_DISP_HOR_RES * MY_DISP_VER_RES / 2 * BYTE_PER_PIXEL]
+        __attribute__((section(".lvgl_buf")));
 
     LV_ATTRIBUTE_MEM_ALIGN
-    static uint8_t buf_2_2[MY_DISP_HOR_RES * MY_DISP_VER_RES / 6 * BYTE_PER_PIXEL];
+    static uint8_t buf_2_2[MY_DISP_HOR_RES * MY_DISP_VER_RES / 2 * BYTE_PER_PIXEL]
+        __attribute__((section(".lvgl_buf")));
     lv_display_set_buffers(disp, buf_2_1, buf_2_2, sizeof(buf_2_1), LV_DISPLAY_RENDER_MODE_PARTIAL);
 
 #elif BUFFER_METHOD == 3

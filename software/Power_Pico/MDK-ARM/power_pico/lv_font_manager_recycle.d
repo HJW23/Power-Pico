@@ -1,0 +1,12 @@
+.\power_pico\lv_font_manager_recycle.o: ..\Middlewares\LVGL\src\font\font_manager\lv_font_manager_recycle.c
+.\power_pico\lv_font_manager_recycle.o: ..\Middlewares\LVGL\src\font\font_manager\lv_font_manager_recycle.h
+.\power_pico\lv_font_manager_recycle.o: ..\Middlewares\LVGL\src\font\font_manager\../../misc/lv_types.h
+.\power_pico\lv_font_manager_recycle.o: ..\Middlewares\LVGL\src\font\font_manager\../../misc/../lv_conf_internal.h
+.\power_pico\lv_font_manager_recycle.o: ..\Middlewares\LVGL\src\font\font_manager\../../misc/../lv_conf_kconfig.h
+.\power_pico\lv_font_manager_recycle.o: ../Middlewares/LVGL/lv_conf.h
+.\power_pico\lv_font_manager_recycle.o: C:\Users\wwww\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
+.\power_pico\lv_font_manager_recycle.o: C:\Users\wwww\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
+.\power_pico\lv_font_manager_recycle.o: C:\Users\wwww\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdbool.h
+.\power_pico\lv_font_manager_recycle.o: C:\Users\wwww\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\inttypes.h
+.\power_pico\lv_font_manager_recycle.o: C:\Users\wwww\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\limits.h
+.\power_pico\lv_font_manager_recycle.o: C:\Users\wwww\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdarg.h

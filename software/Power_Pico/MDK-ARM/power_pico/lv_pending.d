@@ -1,0 +1,17 @@
+.\power_pico\lv_pending.o: ..\Middlewares\LVGL\src\misc\lv_pending.c
+.\power_pico\lv_pending.o: ..\Middlewares\LVGL\src\misc\lv_pending.h
+.\power_pico\lv_pending.o: ..\Middlewares\LVGL\src\misc\lv_types.h
+.\power_pico\lv_pending.o: ..\Middlewares\LVGL\src\misc\../lv_conf_internal.h
+.\power_pico\lv_pending.o: ..\Middlewares\LVGL\src\misc\../lv_conf_kconfig.h
+.\power_pico\lv_pending.o: ../Middlewares/LVGL/lv_conf.h
+.\power_pico\lv_pending.o: C:\Users\wwww\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
+.\power_pico\lv_pending.o: C:\Users\wwww\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
+.\power_pico\lv_pending.o: C:\Users\wwww\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdbool.h
+.\power_pico\lv_pending.o: C:\Users\wwww\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\inttypes.h
+.\power_pico\lv_pending.o: C:\Users\wwww\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\limits.h
+.\power_pico\lv_pending.o: C:\Users\wwww\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdarg.h
+.\power_pico\lv_pending.o: ..\Middlewares\LVGL\src\misc\lv_array.h
+.\power_pico\lv_pending.o: ..\Middlewares\LVGL\src\misc\lv_assert.h
+.\power_pico\lv_pending.o: ..\Middlewares\LVGL\src\misc\lv_log.h
+.\power_pico\lv_pending.o: ..\Middlewares\LVGL\src\misc\../stdlib/lv_mem.h
+.\power_pico\lv_pending.o: ..\Middlewares\LVGL\src\misc\../stdlib/lv_string.h

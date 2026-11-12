@@ -59,7 +59,7 @@ file(GLOB_RECURSE C_SOURCES "BSP/**/*.c"  "SYSTEM/*.c" "Ymodem/*.c")
 set(H_DIRS "BSP/EEPROM" "BSP/KEY" "BSP/LCD" "SYSTEM" "USB_DEVICE/App" "Ymodem")
 
 set(AS_SOURCES
-    startup_stm32f411xe.s
+    startup_stm32f412cx.s
 )
 
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
@@ -75,5 +75,5 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
 # Add project symbols (macros)
 target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE
     USE_HAL_DRIVER
-    STM32F411xE
+    STM32F412Cx
 )

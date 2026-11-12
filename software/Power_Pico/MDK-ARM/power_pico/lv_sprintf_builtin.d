@@ -1,0 +1,13 @@
+.\power_pico\lv_sprintf_builtin.o: ..\Middlewares\LVGL\src\stdlib\builtin\lv_sprintf_builtin.c
+.\power_pico\lv_sprintf_builtin.o: ..\Middlewares\LVGL\src\stdlib\builtin\../../lv_conf_internal.h
+.\power_pico\lv_sprintf_builtin.o: ..\Middlewares\LVGL\src\stdlib\builtin\../../lv_conf_kconfig.h
+.\power_pico\lv_sprintf_builtin.o: ../Middlewares/LVGL/lv_conf.h
+.\power_pico\lv_sprintf_builtin.o: ..\Middlewares\LVGL\src\stdlib\builtin\../lv_sprintf.h
+.\power_pico\lv_sprintf_builtin.o: ..\Middlewares\LVGL\src\stdlib\builtin\../../misc/lv_types.h
+.\power_pico\lv_sprintf_builtin.o: C:\Users\wwww\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
+.\power_pico\lv_sprintf_builtin.o: C:\Users\wwww\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
+.\power_pico\lv_sprintf_builtin.o: C:\Users\wwww\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdbool.h
+.\power_pico\lv_sprintf_builtin.o: C:\Users\wwww\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\inttypes.h
+.\power_pico\lv_sprintf_builtin.o: C:\Users\wwww\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\limits.h
+.\power_pico\lv_sprintf_builtin.o: C:\Users\wwww\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdarg.h
+.\power_pico\lv_sprintf_builtin.o: ..\Middlewares\LVGL\src\stdlib\builtin\../lv_string.h

@@ -1,0 +1,12 @@
+.\power_pico\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/list.c
+.\power_pico\list.o: C:\Users\wwww\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdlib.h
+.\power_pico\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+.\power_pico\list.o: C:\Users\wwww\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
+.\power_pico\list.o: C:\Users\wwww\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
+.\power_pico\list.o: ../Core/Inc/FreeRTOSConfig.h
+.\power_pico\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+.\power_pico\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+.\power_pico\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+.\power_pico\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+.\power_pico\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+.\power_pico\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h

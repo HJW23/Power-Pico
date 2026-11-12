@@ -8,7 +8,7 @@
 
   <img src="https://img.shields.io/badge/Version-1.0.5-blue">
   <img src="https://img.shields.io/badge/License-Apache2.0-green">
-  <img src="https://img.shields.io/badge/MCU-STM32F411-lightblue">
+  <img src="https://img.shields.io/badge/MCU-STM32F412-lightblue">
   <img src="https://img.shields.io/badge/UI-LVGL_v9.2-red">
   <img src="https://img.shields.io/badge/OS-FreeRTOS-green">
   <br>
@@ -35,7 +35,7 @@
 
 - **μA-Level High Precision**: Utilizes the INA190 zero-drift amplifier with three-resistor segmented sampling.
 - **Protocol Trigger**: Supports PD2.0 PPS protocol triggering, with up to 20V/5A output.
-- **High-Performance UI**: Based on STM32F411 + LVGL v9.2, providing a smooth real-time waveform display.
+- **High-Performance UI**: Based on STM32F412 + LVGL v9.2, providing a smooth real-time waveform display.
 - **Elegant PC Client**: Comes with the Power-Pico Client developed with PySide6, supporting data export and real-time power analysis.
 - **Universal Type-C**: All interfaces are Type-C, allowing for easy connection to accessories like Type-C to alligator clips.
 - **3D Printed Enclosure**: Provides a complete design for a user-friendly 3D printed enclosure and acrylic panel.
@@ -49,12 +49,14 @@
 
 | Module | Model | Advantage |
 | :--- | :--- | :--- |
-| **MCU** | STM32F411CEU6 | 100MHz high frequency, supports DSP instructions to accelerate waveform processing |
+| **MCU** | STM32F412CEU6 | Firmware runs at 96 MHz and supports DSP instructions for waveform processing |
 | **Current Sensing** | INA190 | 0.5nA input bias current, the core guarantee for μA-level measurement |
 | **ADC** | 12-bit (STM32 Internal) | Achieves high-speed stable sampling above 10kHz with DMA |
 | **Screen** | 1.54" TFT (ST7789) | 240x240 resolution, high-contrast display |
 
 </div>
+
+The current firmware targets the STM32F412CEU6 board revision: I2C1 uses PB8/PB9, the buzzer uses PB5, and USART1 uses PB6/PB7. The existing `hardware/SCH_2026-02-19.pdf` schematic and prebuilt files in `firmware/` belong to the older STM32F411 board and cannot be used directly on the new revision.
 
 ---
 

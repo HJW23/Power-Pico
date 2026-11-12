@@ -1,0 +1,17 @@
+.\power_pico\lv_os_none.o: ..\Middlewares\LVGL\src\osal\lv_os_none.c
+.\power_pico\lv_os_none.o: ..\Middlewares\LVGL\src\osal\../lv_conf_internal.h
+.\power_pico\lv_os_none.o: ..\Middlewares\LVGL\src\osal\../lv_conf_kconfig.h
+.\power_pico\lv_os_none.o: ../Middlewares/LVGL/lv_conf.h
+.\power_pico\lv_os_none.o: ..\Middlewares\LVGL\src\osal\lv_os_private.h
+.\power_pico\lv_os_none.o: ..\Middlewares\LVGL\src\osal\lv_os.h
+.\power_pico\lv_os_none.o: ..\Middlewares\LVGL\src\osal\../misc/lv_types.h
+.\power_pico\lv_os_none.o: C:\Users\wwww\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
+.\power_pico\lv_os_none.o: C:\Users\wwww\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
+.\power_pico\lv_os_none.o: C:\Users\wwww\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdbool.h
+.\power_pico\lv_os_none.o: C:\Users\wwww\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\inttypes.h
+.\power_pico\lv_os_none.o: C:\Users\wwww\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\limits.h
+.\power_pico\lv_os_none.o: C:\Users\wwww\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdarg.h
+.\power_pico\lv_os_none.o: ..\Middlewares\LVGL\src\osal\lv_os_none.h
+.\power_pico\lv_os_none.o: ..\Middlewares\LVGL\src\osal\../misc/lv_timer.h
+.\power_pico\lv_os_none.o: ..\Middlewares\LVGL\src\osal\../misc/../tick/lv_tick.h
+.\power_pico\lv_os_none.o: ..\Middlewares\LVGL\src\osal\../misc/lv_ll.h

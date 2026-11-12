@@ -8,7 +8,7 @@
 
   <img src="https://img.shields.io/badge/Version-1.0.5-blue">
   <img src="https://img.shields.io/badge/License-Apache2.0-green">
-  <img src="https://img.shields.io/badge/MCU-STM32F411-lightblue">
+  <img src="https://img.shields.io/badge/MCU-STM32F412-lightblue">
   <img src="https://img.shields.io/badge/UI-LVGL_v9.2-red">
   <img src="https://img.shields.io/badge/OS-FreeRTOS-green">
   <br>
@@ -35,7 +35,7 @@
 
 - **uA 级高精度**：采用 INA190 零漂移放大器，配合三档电阻分段采样。
 - **协议诱骗**：支持 PD2.0 PPS 协议诱骗，最高支持 20V/5A 诱骗输出。
-- **高性能 UI**：基于 STM32F411 + LVGL v9.2，提供丝滑的实时波形显示。
+- **高性能 UI**：基于 STM32F412 + LVGL v9.2，提供丝滑的实时波形显示。
 - **优雅上位机**：配套 PySide6 开发的 Power-Pico Client，支持数据导出与实时功耗分析。
 - **通用Type-C**：全部接口都是Typec-C，可以方便的外接Type-C转鳄鱼头等接头。
 - **3D打印外壳**：提供完整的方便用户组装的 3D 打印外壳与亚克力面板设计方案。
@@ -48,12 +48,14 @@
 
 | 模块 | 选型 | 优势 |
 | :--- | :--- | :--- |
-| **主控** | STM32F411CEU6 | 100MHz 高主频，支持 DSP 指令加速波形处理 |
+| **主控** | STM32F412CEU6 | 固件运行于 96MHz，支持 DSP 指令加速波形处理 |
 | **电流采样** | INA190 | 0.5nA 输入偏置电流，μA 级测量的核心保证 |
 | **ADC** | 12-bit (STM32 Internal) | 配合 DMA 实现 10kHz 以上的高速稳定采样 |
 | **屏幕** | 1.54" TFT (ST7789) | 240x240 分辨率，高对比度显示 |
 
 </div>
+
+当前固件面向 STM32F412CEU6 新版硬件：I2C1 使用 PB8/PB9，蜂鸣器使用 PB5，USART1 使用 PB6/PB7。`hardware/SCH_2026-02-19.pdf` 和 `firmware/` 中现有预编译固件属于旧版 STM32F411 硬件，不可直接用于新版。
 
 ---
 
