@@ -2,6 +2,7 @@
 #include "usbd_cdc_if.h"
 #include "user_AdcDataStrategy.h"
 #include "user_CmdStrategy.h"
+#include "user_Link.h"
 #include "user_MessageTask.h"
 #include "user_TasksInit.h"
 
@@ -40,6 +41,10 @@ void MessageSendTask(void *argument)
     bool tx_active = false;
 
     (void)argument;
+
+    /* USB 模式下为空操作；UART 模式下启动 DMA + IDLE 接收 */
+    Link_StartRx();
+
     while (1) {
         const uint8_t *next_data = NULL;
         uint16_t next_length = 0U;
@@ -123,7 +128,7 @@ void MessageSendTask(void *argument)
 
         if (next_data != NULL && next_length <= sizeof(active_tx)) {
             memcpy(active_tx, next_data, next_length);
-            if (CDC_Transmit_FS(active_tx, next_length) == USBD_OK) {
+            if (Link_Send(active_tx, next_length) == 0U) {
                 tx_active = true;
                 if (next_is_command) {
                     command_pending = false;

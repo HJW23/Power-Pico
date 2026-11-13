@@ -1,8 +1,12 @@
 # 忽略GUI设置
 *.uvguix.kingham
+*.uvguix.*
 
 # 忽略所有位置的 .vscode 目录
 **/.vscode/
 **/.settings/
 # 忽略所有位置的 build 目录
 **/build/
+
+# 忽略 AI 助手工作目录（本地记忆/缓存，不入库）
+.workbuddy/

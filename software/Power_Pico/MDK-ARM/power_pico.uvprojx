@@ -1148,6 +1148,11 @@
               <FileType>1</FileType>
               <FilePath>..\User\user_CmdStrategy.c</FilePath>
             </File>
+            <File>
+              <FileName>user_Link.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\user_Link.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

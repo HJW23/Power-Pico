@@ -24,6 +24,8 @@
 /* USER CODE BEGIN INCLUDE */
 
 #include "user_TasksInit.h"
+#include "user_Link.h"
+
 #include <string.h>
 
 /* USER CODE END INCLUDE */
@@ -264,19 +266,8 @@ static int8_t CDC_Control_FS(uint8_t cmd, uint8_t* pbuf, uint16_t length)
 static int8_t CDC_Receive_FS(uint8_t* Buf, uint32_t *Len)
 {
   /* USER CODE BEGIN 6 */
-  CmdRxChunk_t chunk;
-
-  if (CmdRxQueue != NULL && *Len <= CMD_RX_CHUNK_SIZE) {
-      chunk.length = (uint16_t)*Len;
-      if (chunk.length != 0U) {
-          memcpy(chunk.data, Buf, chunk.length);
-      }
-      if (osMessageQueuePut(CmdRxQueue, &chunk, 0U, 0U) != osOK) {
-          CmdRxOverflowCount++;
-      }
-  } else {
-      CmdRxOverflowCount++;
-  }
+  /* 统一走链路层投递，UART 链路使用同一命令队列 */
+  Link_PushRx(Buf, (uint16_t)*Len);
 
   USBD_CDC_SetRxBuffer(&hUsbDeviceFS, UserRxBufferFS);
   USBD_CDC_ReceivePacket(&hUsbDeviceFS);
